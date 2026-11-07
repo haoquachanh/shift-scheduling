@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Giờ Làm</title>
+  <meta name="theme-color" content="#0f766e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Giờ Làm">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div id="month-nav" class="month-nav">
+      <button id="prev" aria-label="Tháng trước">‹</button>
+      <button id="go-today" class="today-btn">Hôm nay</button>
+      <button id="next" aria-label="Tháng sau">›</button>
+    </div>
+    <h1 id="title">Giờ Làm</h1>
+    <div class="top-actions">
+      <select id="top-lang" class="lang-select" aria-label="Language">
+        <option value="vi">🌐 VI</option>
+        <option value="en">🌐 EN</option>
+        <option value="ja">🌐 JA</option>
+      </select>
+      <button id="sync-badge" class="sync-badge" aria-label="Trạng thái đồng bộ">💾</button>
+    </div>
+  </header>
+
+  <div id="install" class="install" hidden>
+    <span id="install-text">Cài app: bấm <b>Chia sẻ</b> <span aria-hidden="true">⬆️</span> → <b>Thêm vào MH chính</b></span>
+    <button aria-label="Ẩn">✕</button>
+  </div>
+
+  <main id="main"></main>
+
+  <nav class="tabbar">
+    <button data-tab="cal" class="active"><span>📅</span><span class="tab-lbl" id="lbl-tab-cal">Lịch</span></button>
+    <button data-tab="table"><span>📋</span><span class="tab-lbl" id="lbl-tab-table">Bảng tháng</span></button>
+    <button data-tab="plan"><span>🧠</span><span class="tab-lbl" id="lbl-tab-plan">Gợi ý</span></button>
+    <button data-tab="settings"><span>⚙️</span><span class="tab-lbl" id="lbl-tab-settings">Cài đặt</span></button>
+  </nav>
+
+  <div id="backdrop" class="backdrop" hidden></div>
+  <div id="modal" class="modal" hidden></div>
+  <div id="toast" class="toast"></div>
+  <div id="pdf-host" class="pdf-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

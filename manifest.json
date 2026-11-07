@@ -1,0 +1,17 @@
+{
+  "name": "Giờ Làm – Tính giờ làm cá nhân",
+  "short_name": "Giờ Làm",
+  "description": "Chấm công cá nhân, kiểm tra luật 28h/7 ngày, gợi ý lịch làm tối ưu, xuất PDF theo tháng.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f2f4f7",
+  "theme_color": "#0f766e",
+  "lang": "vi",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
